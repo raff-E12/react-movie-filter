@@ -41,4 +41,52 @@
 .form-cont{
   width: 100%;
   gap: 10px;
+  flex-direction: row;
+}
+
+.container-cards{
+  width: 75%;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px;
+  flex-wrap: wrap;
+}
+
+.card{
+  width: 200px;
+}
+
+.select-drop{
+  width: auto;
+  background-color: var(--light);
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font-base);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.fa-caret-down {
+  font-size: 12px;
+  color: var(--secondary);
+  position: absolute;
+  right: 8px;
+  top: 17px;
+  z-index: 99999;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.select-drop:focus{
+  outline: none;
+}
+
+.select-wrap-sc{
+  width: auto;
+  position: relative;
+  cursor: pointer;
 }
