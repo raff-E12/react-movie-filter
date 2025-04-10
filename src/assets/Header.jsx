@@ -1,18 +1,24 @@
 import React, { useState } from 'react'
 import ListMovies from "./Movies.json"
 
-export default function Header({links, set}) {
-  const list_export = ListMovies;
+export default function Header({filter}) {
+  // const list_export = ListMovies;
+
+  // const HandleFilteradd = (e) =>{
+  //   const { id, value } = e.target;
+  //   const genre = value;
+  //   if (genre === 'All') {
+  //     set(list_export);
+  //   } else {
+  //     let filter_value = list_export.filter(movie => movie.genre === genre);
+  //     set(filter_value);
+  //   }
+  // }
 
   const HandleFilteradd = (e) =>{
-    const { id, value } = e.target;
-    const genre = value;
-    if (genre === 'All') {
-      set(list_export);
-    } else {
-      let filter_value = list_export.filter(movie => movie.genre === genre);
-      set(filter_value);
-    }
+    const {id , value} = e.target;
+    console.log(value, id);
+    filter(value);
   }
 
   return (
