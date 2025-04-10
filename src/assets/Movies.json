@@ -4,5 +4,19 @@
     { "title": "Titanic", "genre": "Romantico" },
     { "title": "Batman", "genre": "Azione" },
     { "title": "Interstellar", "genre": "Fantascienza" },
-    { "title": "Pulp Fiction", "genre": "Thriller" }
-]  
+    { "title": "Pulp Fiction", "genre": "Thriller" },
+    { "title": "Forrest Gump", "genre": "Drammatico" },
+    { "title": "Matrix", "genre": "Fantascienza" },
+    { "title": "Fight Club", "genre": "Drammatico" },
+    { "title": "La La Land", "genre": "Romantico" },
+    { "title": "Il Cavaliere Oscuro", "genre": "Azione" },
+    { "title": "Shutter Island", "genre": "Thriller" },
+    { "title": "Her", "genre": "Fantascienza" },
+    { "title": "Gladiatore", "genre": "Storico" },
+    { "title": "The Social Network", "genre": "Biografico" },
+    { "title": "Il favoloso mondo di Amélie", "genre": "Commedia" },
+    { "title": "The Prestige", "genre": "Drammatico" },
+    { "title": "Gravity", "genre": "Fantascienza" },
+    { "title": "Se mi lasci ti cancello", "genre": "Romantico" },
+    { "title": "Mad Max: Fury Road", "genre": "Azione" }
+]
