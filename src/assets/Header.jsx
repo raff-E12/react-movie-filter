@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ListMovies from "./Movies.json"
 
-export default function Header({filter}) {
+export default function Header({filter, values, clickEvent}) {
   // const list_export = ListMovies;
 
   // const HandleFilteradd = (e) =>{
@@ -15,9 +15,15 @@ export default function Header({filter}) {
   //   }
   // }
 
+  const HandleinputValue = (e) =>{
+    const {id, value} = e.target;
+    // console.log(value);
+    values(value);
+  }
+
   const HandleFilteradd = (e) =>{
     const {id , value} = e.target;
-    console.log(value, id);
+    // console.log(value, id);
     filter(value);
   }
 
@@ -37,8 +43,8 @@ export default function Header({filter}) {
                   <li><button className="dropdown-item" type="button" id='selection-4' value="Romantico" onClick={HandleFilteradd}>Romantico</button></li>
                 </ul>
             </div>
-            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Cerca un film..." />
-            <button className='btn btn-primary' id='btn-add'>Add</button>
+            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Cerca un film..." onChange={HandleinputValue}/>
+            <button className='btn btn-primary' id='btn-add' onClick={() =>{clickEvent()}}>Add</button>
             </div>
         </div>
     </header>
