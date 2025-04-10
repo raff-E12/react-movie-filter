@@ -6,7 +6,7 @@ export default function Header() {
 
   const HandleFilteradd = (e) =>{
     const { id, value } = e.target;
-    console.log(id, value)
+    console.log(id, value);
   }
 
   return (
@@ -14,15 +14,16 @@ export default function Header() {
         <div className='hd-container container d-flex'>
             <h4>Boolan Movie</h4>
             <div className='form-cont container d-flex'>
-              <div className='select-wrap-sc'>
-                <i class="fa-solid fa-caret-down"></i>
-                <select name="list-filter" id="filter-movie" className='select-drop'>
-                  <option value="All" id='select-1' selected>All</option>
-                  <option value="Thiller" id='select-2'>Thiller</option>
-                  <option value="Azione" id='select-3'>Azione</option>
-                  <option value="Romantico" id='select-4'>Romantico</option>
-                </select>
-              </div>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Genere
+                </button>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" type="button" id='selection-1' value="Azione" onClick={HandleFilteradd}>Azione</button></li>
+                  <li><button class="dropdown-item" type="button" id='selection-2' value="Thiller" onClick={HandleFilteradd}>Thiller</button></li>
+                  <li><button class="dropdown-item" type="button" id='selection-3' value="Romantico" onClick={HandleFilteradd}>Romantico</button></li>
+                </ul>
+            </div>
             <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="Cerca un film..." />
             <button className='btn btn-primary' id='btn-add'>Add</button>
             </div>
